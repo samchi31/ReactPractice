@@ -1,0 +1,44 @@
+.map-board {
+  display: flex;
+  flex-direction: column;
+}
+.map-board {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  bottom: 75px;
+  box-shadow: 3px 3px 10px gray;
+  box-sizing: border-box;
+  gap: 10px;
+  height: 390px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  right: 25px;
+  transition: width .3s,height .3s;
+  width: 220px;
+}
+.div-flex{
+  display: flex;
+}
+
+#map-popup {
+	display: flex;
+	flex-direction: column;
+
+	background-color: white;
+	border: 1px solid gainsboro;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 5px grey;
+
+	max-width: 400px;
+
+	padding: 20px;
+}
+#map-popup button {
+  background: transparent;
+  border: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}

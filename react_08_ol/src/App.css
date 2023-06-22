@@ -1,0 +1,106 @@
+.map-board {
+  display: flex;
+  flex-direction: column;
+}
+.map-board {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  bottom: 75px;
+  box-shadow: 3px 3px 10px gray;
+  box-sizing: border-box;
+  gap: 10px;
+  height: 390px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  right: 25px;
+  transition: width .3s,height .3s;
+  width: 220px;
+  top : 30rem;
+  z-index: 10;
+}
+.div-flex{
+  display: flex;
+}
+
+#map-popup {
+	display: flex;
+	flex-direction: column;
+
+	background-color: white;
+	border: 1px solid gainsboro;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 5px grey;
+
+	max-width: 400px;
+
+	padding: 20px;
+  margin-bottom: 3rem;
+}
+#map-popup button {
+  background: transparent;
+  border: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+.result > div.active {
+  background: #333;
+  color: #eee;
+}
+
+.result {
+  position: fixed;
+  top:80px;
+  left: 20px;
+  background: lightskyblue;
+}
+
+/**
+  * The zoomslider in the second map shall be placed between the zoom-in and
+  * zoom-out buttons.
+  */
+#map .ol-zoom .ol-zoom-out {
+  margin-top: 200px;
+}
+#map .ol-zoomslider {
+  background-color: transparent;
+  /*
+  Zoom control top: 0.5em
+  Zoom control padding: 2px
+  Zoom in button margin top: 1px
+  Zoom in button height: font size 1.14em * 1.375 height
+  */
+  top: calc(0.5em + 2px + 1px + 1.14 * 1.375em);
+  z-index: 10;
+}
+
+#map .ol-touch .ol-zoom .ol-zoom-out {
+  margin-top: 212px;
+}
+#map .ol-touch .ol-zoomslider {
+  top: 2.75em;
+}
+
+#map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
+#map .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+  top: 3px;
+}
+
+#map .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
+#map .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+  top: 232px;
+}
+
+.ol-control {
+  /* position: absolute; */
+  background-color: var(--ol-subtle-background-color);
+  border-radius: 4px;
+}
+
+.ol-zoom {
+  top:5rem;
+}
